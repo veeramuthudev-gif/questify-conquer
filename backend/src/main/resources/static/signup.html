@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Questify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
+    <link rel="stylesheet" href="./CSS/signup.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    <div class="container">
+        <div class="brand">
+            <i class="fa-solid fa-khanda"></i>
+            <h1>QUESTIFY</h1>
+            <p>BEGIN YOUR ADVENTURE</p>
+        </div>
+        <div class="signup-card">
+            <h2>Create Your Account</h2>
+            <p class="subtitle">
+                Start your journey. Complete quests. Level up.
+            </p>
+            <form>
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Create Password" required>
+                </div>
+                <button type="submit" class="signup-btn" style="border:none; cursor:pointer; width:100%; display:flex; align-items:center; justify-content:center; gap:8px;">
+                    START JOURNEY
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <p class="login-text">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

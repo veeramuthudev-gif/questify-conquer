@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Questify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    <div class="container">
+        <div class="brand">
+            <i class="fa-solid fa-khanda"></i>
+            <h1>QUESTIFY</h1>
+            <p>CONTINUE YOUR ADVENTURE</p>
+        </div>
+        <div class="login-card">
+            <h2>Welcome Back!</h2>
+            <p class="subtitle">
+                Your next quest is waiting for you.
+            </p>
+            <form>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    >
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required
+                    >
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" checked>
+                        Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-btn" style="border:none; cursor:pointer; width:100%; display:flex; align-items:center; justify-content:center; gap:8px;">
+                    LOGIN
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <p class="signup-text">
+                New to Questify?
+                <a href="signup.html">
+                    Create Account
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

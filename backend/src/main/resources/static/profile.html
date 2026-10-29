@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify | Profile</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+ 
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-khanda"></i>
+            </div>
+            <h1>QUESTIFY</h1>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="quests.html">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
+            </a>
+            <a href="progress.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Progress</span>
+            </a>
+            <a href="achievement.html">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+            <a href="profile.html" class="active">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </div>
+            <a href="profile.html" class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- PAGE HEADER -->
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">YOUR IDENTITY</p>
+                <h2>
+                    Welcome back,
+                    <span>Adventurer 👋</span>
+                </h2>
+                <p class="sub-text">
+                    Your journey, your achievements, your legacy.
+                </p>
+            </div>
+        </header>
+   
+        <section class="profile-hero">
+            <!-- PROFILE INFORMATION -->
+            <div class="profile-info">
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="online-dot"></div>
+                </div>
+                <div class="user-details">
+                    <p class="user-label">QUESTIFY ADVENTURER</p>
+                    <h1>Adventurer</h1>
+                    <p class="rank">
+                        <i class="fa-solid fa-crown"></i>
+                        Novice Adventurer
+                    </p>
+                    <p class="joined">
+                        <i class="fa-regular fa-calendar"></i>
+                        Adventurer since 2026
+                    </p>
+                </div>
+            </div>
+            <!-- EDIT BUTTON -->
+            <a href="./settings.html" class="edit-btn">
+                <i class="fa-solid fa-pen"></i>
+                Edit Profile
+            </a>
+        </section>
+ 
+        <section class="level-card">
+            <div class="level-heading">
+                <div>
+                    <p class="card-label">CURRENT LEVEL</p>
+                    <h2>LEVEL 01</h2>
+                    <p>
+                        Novice Adventurer
+                    </p>
+                </div>
+                <div class="level-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+            </div>
+            <div class="xp-details">
+                <span>0 XP</span>
+                <span>100 XP</span>
+            </div>
+            <div class="xp-bar">
+                <div class="xp-fill" style="width: 0%;"></div>
+            </div>
+            <div class="level-bottom">
+                <p>
+                    🔥 Only <strong>100 XP</strong> left to reach Level 02!
+                </p>
+                <span>0%</span>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+                <div>
+                    <p>Current Streak</p>
+                    <h2>0 Days</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <p>Total XP</p>
+                    <h2>0 XP</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon gold">
+                    <i class="fa-solid fa-scroll"></i>
+                </div>
+                <div>
+                    <p>Quests Completed</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon pink">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <p>Achievements</p>
+                    <h2>0 / 6</h2>
+                </div>
+            </div>
+        </section>
+  
+        <section class="content-grid">
+            <!-- PRODUCTIVITY CARD -->
+            <div class="productivity-card">
+                <div class="section-title">
+                    <div>
+                        <p class="eyebrow">YOUR PERFORMANCE</p>
+                        <h2>Productivity Overview</h2>
+                    </div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="performance-list">
+                    <div class="performance-item">
+                        <div class="performance-top">
+                            <span>Quest Completion</span>
+                            <strong>0%</strong>
+                        </div>
+                        <div class="small-bar">
+                            <div class="completion" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-top">
+                            <span>Daily Goals</span>
+                            <strong>0%</strong>
+                        </div>
+                        <div class="small-bar">
+                            <div class="goals" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    <div class="performance-item">
+                        <div class="performance-top">
+                            <span>Consistency</span>
+                            <strong>0%</strong>
+                        </div>
+                        <div class="small-bar">
+                            <div class="consistency" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- STREAK CARD -->
+            <div class="streak-card">
+                <div class="streak-icon">
+                    🔥
+                </div>
+                <p class="card-label">BEST STREAK</p>
+                <h2>0 Days</h2>
+                <p>
+                    Your longest productivity streak.
+                </p>
+                <div class="streak-line"></div>
+                <span>
+                    Keep pushing forward ⚡
+                </span>
+            </div>
+        </section>
+
+        <section class="recent-section">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">YOUR TROPHIES</p>
+                    <h2>Recent Achievements</h2>
+                </div>
+                <a href="achievement.html">
+                    View All
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="achievement-grid">
+                <div class="achievement-mini" style="opacity: 0.6;">
+                    <div class="mini-icon">
+                        🔒
+                    </div>
+                    <div>
+                        <h3>Unlock Badges</h3>
+                        <p>Complete quests to forge your legacy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-quote">
+            <div class="quote-symbol">
+                "
+            </div>
+            <div>
+                <p>
+                    The strongest version of yourself is built
+                    one quest at a time.
+                </p>
+                <span>
+                    — Questify Philosophy
+                </span>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-logo">
+                ⚡ QUESTIFY
+            </div>
+            <p>
+                Build your journey. Complete your quests.
+                Become legendary.
+            </p>
+            <span>
+                © 2026 Questify
+            </span>
+        </footer>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/profile.js"></script>
+</body>
+</html>

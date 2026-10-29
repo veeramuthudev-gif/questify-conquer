@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify | Create Quest</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/create.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    
+    <nav class="navbar">
+        <a href="home.html" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-khanda"></i>
+            </div>
+            <h1>QUESTIFY</h1>
+        </a>
+        <div class="nav-links">
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="quests.html">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Quests</span>
+            </a>
+            <a href="create.html" class="active">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
+            </a>
+            <a href="progress.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Progress</span>
+            </a>
+            <a href="achievement.html">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </div>
+            <a href="profile.html" class="profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    CREATE YOUR ADVENTURE
+                </p>
+                <h2>
+                    Build Your
+                    <span>Own Quest.</span>
+                </h2>
+                <p class="sub-text">
+                    Turn your goals into challenges and earn XP for every victory.
+                </p>
+            </div>
+        </header>
+        
+        <section class="create-layout">
+            
+            <div class="create-card">
+                <div class="card-heading">
+                    <div class="heading-icon">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <div>
+                        <h3>Quest Details</h3>
+                        <p>
+                            Define your next challenge.
+                        </p>
+                    </div>
+                </div>
+                <form>
+                    
+                    <div class="form-group">
+                        <label>
+                            Quest Title
+                        </label>
+                        <div class="input-box">
+                            <i class="fa-solid fa-heading"></i>
+                            <input
+                                type="text"
+                                placeholder="Enter your quest title"
+                                required
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            Description
+                        </label>
+                        <div class="input-box textarea-box">
+                            <i class="fa-solid fa-align-left"></i>
+                            <textarea
+                                placeholder="Describe what you want to accomplish..."
+                            ></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>
+                                Category
+                            </label>
+                            <div class="input-box select-box">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <select>
+                                    <option>Study</option>
+                                    <option>Coding</option>
+                                    <option>Fitness</option>
+                                    <option>Mind</option>
+                                    <option>Personal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Difficulty
+                            </label>
+                            <div class="input-box select-box">
+                                <i class="fa-solid fa-fire"></i>
+                                <select>
+                                    <option>Easy</option>
+                                    <option selected>Medium</option>
+                                    <option>Hard</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>
+                                XP Reward
+                            </label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-bolt"></i>
+                                <input type="number" placeholder="e.g. 50, 100">
+                                <span class="input-unit">
+                                    XP
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Time Limit
+                            </label>
+                            <div class="input-box">
+                                <i class="fa-regular fa-clock"></i>
+                                <input
+                                    type="text"
+                                    placeholder="e.g. 30 mins, 1 hour"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            Quest Type
+                        </label>
+                        <div class="quest-types">
+                            <label class="type-option">
+                                <input type="radio" name="type" checked>
+                                <span>
+                                    <i class="fa-solid fa-calendar-day"></i>
+                                    Daily
+                                </span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="type">
+                                <span>
+                                    <i class="fa-solid fa-calendar-week"></i>
+                                    Weekly
+                                </span>
+                            </label>
+                            <label class="type-option">
+                                <input type="radio" name="type">
+                                <span>
+                                    <i class="fa-solid fa-bolt"></i>
+                                    Challenge
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="create-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Create Quest
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="preview-wrapper">
+                <p class="preview-label">
+                    QUEST PREVIEW
+                </p>
+                <div class="preview-card">
+                    <div class="preview-top">
+                        <div class="preview-icon">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </div>
+                        <span class="preview-status">
+                            NEW QUEST
+                        </span>
+                    </div>
+                    <div class="preview-content">
+                        <p class="preview-category">
+                            DAILY QUEST
+                        </p>
+                        <h3>
+                            Master Your Skills
+                        </h3>
+                        <p class="preview-description">
+                            Complete your challenge and take one step closer
+                            to your next level.
+                        </p>
+                    </div>
+                    <div class="preview-meta">
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>+100 XP</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                    <div class="difficulty">
+                        <span>DIFFICULTY</span>
+                        <strong>
+                            <i class="fa-solid fa-fire"></i>
+                            Medium
+                        </strong>
+                    </div>
+                    <div class="preview-divider"></div>
+                    <div class="preview-footer">
+                        <span>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Ready for adventure?
+                        </span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="reward-box">
+                    <div class="reward-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <p>
+                            QUEST REWARD
+                        </p>
+                        <h3>
+                            +100 XP
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="creator-tip">
+            <div class="tip-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div>
+                <p class="tip-label">
+                    QUEST CREATOR TIP
+                </p>
+                <p>
+                    Keep your quest specific and achievable.
+                    Small victories create powerful habits.
+                </p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>
+                ⚡ QUESTIFY — Turn your goals into adventures.
+            </p>
+            <span>
+                Keep going. Keep growing. 🚀
+            </span>
+        </footer>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/create.js"></script>
+</body>
+</html>

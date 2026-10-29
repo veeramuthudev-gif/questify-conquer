@@ -6,6 +6,7 @@
     <title>Questify | Your Daily Adventure</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
     <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     <div class="background">
@@ -21,13 +22,17 @@
             <h1>QUESTIFY</h1>
         </div>
         <nav>
-            <a href="index.html" class="active">
+            <a href="home.html" class="active">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
             <a href="quests.html">
                 <i class="fa-solid fa-crosshairs"></i>
                 <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
             </a>
             <a href="progress.html">
                 <i class="fa-solid fa-chart-line"></i>
@@ -40,18 +45,18 @@
         </nav>
         <div class="sidebar-level">
             <div class="level-circle">
-                12
+                01
             </div>
             <div>
                 <p>CURRENT LEVEL</p>
-                <h3>Quest Master</h3>
+                <h3>Novice Adventurer</h3>
             </div>
         </div>
     </aside>
     <main class="main-content">
         <header>
             <div class="welcome">
-                <p>WELCOME BACK, ADVENTURER</p>
+                <p>WELCOME, ADVENTURER</p>
                 <h2>
                     Ready for your next
                     <span>quest?</span>
@@ -73,14 +78,14 @@
         <section class="hero-card">
             <div class="hero-content">
                 <p class="hero-small">
-                    YOUR JOURNEY CONTINUES
+                    YOUR JOURNEY BEGINS
                 </p>
                 <h1>
                     Make Today
                     <span>Count.</span>
                 </h1>
                 <p>
-                    Complete your daily quests, earn XP, build your streak,
+                    Complete your quests, earn XP, build your streak,
                     and become the best version of yourself.
                 </p>
                 <a href="quests.html" class="hero-btn">
@@ -92,7 +97,7 @@
                 <div class="level-top">
                     <div>
                         <p>YOUR CURRENT LEVEL</p>
-                        <h2>Level 12</h2>
+                        <h2>Level 1</h2>
                     </div>
                     <div class="level-icon">
                         <i class="fa-solid fa-crown"></i>
@@ -100,14 +105,14 @@
                 </div>
                 <div class="progress-info">
                     <span>XP Progress</span>
-                    <span>850 / 1000 XP</span>
+                    <span>0 / 100 XP</span>
                 </div>
                 <div class="progress-bar">
-                    <div class="progress-fill"></div>
+                    <div class="progress-fill" style="width: 0%;"></div>
                 </div>
                 <div class="level-message">
                     <i class="fa-solid fa-fire"></i>
-                    Only 150 XP to reach Level 13!
+                    Only 100 XP to reach Level 2!
                 </div>
             </div>
         </section>
@@ -118,8 +123,8 @@
                 </div>
                 <div class="stat-info">
                     <p>Current Streak</p>
-                    <h2>7 Days</h2>
-                    <span>Keep it going!</span>
+                    <h2>0 Days</h2>
+                    <span>Start your streak!</span>
                 </div>
             </div>
             <div class="stat-card">
@@ -128,8 +133,8 @@
                 </div>
                 <div class="stat-info">
                     <p>Total XP</p>
-                    <h2>8,450 XP</h2>
-                    <span>+450 this week</span>
+                    <h2>0 XP</h2>
+                    <span>Complete quests to earn XP</span>
                 </div>
             </div>
             <div class="stat-card">
@@ -138,8 +143,8 @@
                 </div>
                 <div class="stat-info">
                     <p>Completed</p>
-                    <h2>128 Quests</h2>
-                    <span>Great progress!</span>
+                    <h2>0 Quests</h2>
+                    <span>Begin your journey!</span>
                 </div>
             </div>
         </section>
@@ -176,7 +181,7 @@
                             <i class="fa-regular fa-clock"></i>
                             30 min
                         </span>
-                        <a href="quest-details.html">
+                        <a href="quests.html?id=1">
                             Start
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -203,7 +208,7 @@
                             <i class="fa-regular fa-clock"></i>
                             45 min
                         </span>
-                        <a href="quest-details.html">
+                        <a href="quests.html?id=2">
                             Start
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -230,7 +235,7 @@
                             <i class="fa-regular fa-clock"></i>
                             20 min
                         </span>
-                        <a href="quest-details.html">
+                        <a href="quests.html?id=3">
                             Start
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -275,7 +280,7 @@
         </div>
         <div class="footer-links">
             <h3>Explore</h3>
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="quests.html">Quests</a>
             <a href="progress.html">Progress</a>
             <a href="achievement.html">Achievements</a>
@@ -283,9 +288,9 @@
         <div class="footer-links">
             <h3>Support</h3>
             <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
             <a href="#">Help Center</a>
             <a href="#">Privacy</a>
-            <a href="#">Terms</a>
         </div>
         <div class="footer-social">
             <h3>Follow Questify</h3>
@@ -318,5 +323,9 @@
         </div>
     </div>
 </footer>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/home.js"></script>
 </body>
 </html>

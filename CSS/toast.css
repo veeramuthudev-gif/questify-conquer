@@ -1,0 +1,289 @@
+/* ========================================================
+   QUESTIFY TOAST & CELEBRATION STYLES
+   ======================================================== */
+.questify-toast-container {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.questify-toast {
+    pointer-events: auto;
+    min-width: 300px;
+    max-width: 420px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(124, 58, 237, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #fff;
+    font-family: inherit;
+    animation: toastSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transition: all 0.3s ease;
+}
+
+.questify-toast.toast-hiding {
+    animation: toastSlideOut 0.3s ease forwards;
+}
+
+.toast-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.toast-success .toast-icon {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
+}
+
+.toast-error .toast-icon {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+.toast-info .toast-icon {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.toast-xp .toast-icon {
+    background: linear-gradient(135deg, #8b5cf6, #d946ef);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+}
+
+.toast-body {
+    flex: 1;
+}
+
+.toast-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 2px;
+}
+
+.toast-msg {
+    font-size: 12px;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    transition: color 0.2s;
+}
+
+.toast-close:hover {
+    color: #fff;
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(60px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes toastSlideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(60px) scale(0.9);
+    }
+}
+
+/* Modal Popup for Level Up & Achievements */
+.questify-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    animation: fadeInOverlay 0.3s ease;
+}
+
+.questify-modal {
+    background: linear-gradient(145deg, #0f172a, #1e1b4b);
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 24px;
+    padding: 36px 32px;
+    max-width: 440px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(139, 92, 246, 0.35);
+    position: relative;
+    animation: modalPop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-glow-circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
+    animation: bounceGlow 2s infinite alternate;
+}
+
+.questify-modal h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #fff, #c4b5fd, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.questify-modal p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.modal-btn {
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.modal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(124, 58, 237, 0.6);
+}
+
+@keyframes fadeInOverlay {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalPop {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes bounceGlow {
+    from { transform: translateY(0); box-shadow: 0 0 25px rgba(168, 85, 247, 0.5); }
+    to { transform: translateY(-6px); box-shadow: 0 0 45px rgba(236, 72, 153, 0.8); }
+}
+
+/* Notification Dropdown Menu */
+.notification-dropdown {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    width: 320px;
+    background: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(124, 58, 237, 0.2);
+    padding: 16px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    animation: fadeInOverlay 0.25s ease;
+}
+
+.notification-dropdown.active {
+    display: flex;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 8px;
+}
+
+.dropdown-header h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #c4b5fd;
+}
+
+.dropdown-header span {
+    font-size: 11px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-item i {
+    color: #a855f7;
+    margin-top: 3px;
+}
+
+.dropdown-item div h5 {
+    font-size: 12px;
+    color: #f1f5f9;
+}
+
+.dropdown-item div p {
+    font-size: 11px;
+    color: #94a3b8;
+}

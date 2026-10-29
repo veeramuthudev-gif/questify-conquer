@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/quests.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
 
@@ -26,6 +27,7 @@
         <nav class="main-nav">
             <a href="home.html">Home</a>
             <a href="quests.html" class="active">Quests</a>
+            <a href="create.html">Create</a>
             <a href="progress.html">Progress</a>
             <a href="achievement.html">Achievements</a>
         </nav>
@@ -64,19 +66,19 @@
         </a>
         <div class="sidebar-level">
             <div class="level-circle">
-                05
+                01
             </div>
             <div>
                 <p>Current Level</p>
-                <h3>Explorer</h3>
+                <h3>Novice Adventurer</h3>
             </div>
         </div>
     </aside>
 
     <main class="main-content">
-        <a href="quests.html" class="back-link">
+        <a href="home.html" class="back-link">
             <i class="fa-solid fa-arrow-left"></i>
-            Back to Quests
+            Back to Dashboard
         </a>
 
         <section class="quest-hero">
@@ -112,7 +114,6 @@
             <div class="character">
                 <div class="character-aura"></div>
                 <div class="character-card">
-                    <!-- <i class="fa-solid fa-user-shield"></i> -->
                      <img src="./IMAGES/gamer.jfif" alt="gamer">
                 </div>
                 <div class="character-ring"></div>
@@ -233,14 +234,14 @@
                 </p>
             </div>
             <div class="progress-number">
-                <strong>37%</strong>
+                <strong>0%</strong>
                 <span>Completed</span>
             </div>
         </section>
 
         <div class="start-area">
-            <a href="./create.html"class="start-btn" >
-                <span>Continue Quest</span>
+            <a href="#" class="start-btn">
+                <span>Advance Quest</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -252,5 +253,9 @@
             <span>— Questify</span>
         </section>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/quests.js"></script>
 </body>
 </html>

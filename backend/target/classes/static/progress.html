@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify | Progress</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/progress.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    <nav class="navbar">
+        <a href="home.html" class="brand">
+            <div class="logo-icon">
+                <i class="fa-solid fa-khanda"></i>
+            </div>
+            <h1>QUESTIFY</h1>
+        </a>
+        <div class="nav-links">
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="quests.html">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
+            </a>
+            <a href="progress.html" class="active">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Progress</span>
+            </a>
+            <a href="achievement.html">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </div>
+            <a href="profile.html" class="profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div>
+                <p class="small-title">📈 YOUR JOURNEY</p>
+                <h2>
+                    Track Your
+                    <span>Progress.</span>
+                </h2>
+                <p class="description">
+                    See how far you've come and how close you are
+                    to your next level.
+                </p>
+            </div>
+            <div class="level-badge">
+                <div class="level-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <p>CURRENT LEVEL</p>
+                    <h3>LEVEL 01</h3>
+                </div>
+            </div>
+        </section>
+        <section class="overall-card">
+            <div class="overall-left">
+                <p class="card-label">OVERALL PROGRESS</p>
+                <h1>0<span>%</span></h1>
+                <p>
+                    Complete your daily quests to earn XP and level up your journey!
+                </p>
+                <div class="overall-progress">
+                    <div class="progress-top">
+                        <span>Journey Progress</span>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="overall-circle">
+                <div class="circle-inner">
+                    <i class="fa-solid fa-fire"></i>
+                    <strong>0</strong>
+                    <span>DAY STREAK</span>
+                </div>
+            </div>
+        </section>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-scroll"></i>
+                </div>
+                <div>
+                    <p>QUESTS COMPLETED</p>
+                    <h2>0</h2>
+                    <span>Start your first quest</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <p>TOTAL XP</p>
+                    <h2>0</h2>
+                    <span>Earn XP from quests</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon pink">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+                <div>
+                    <p>BEST STREAK</p>
+                    <h2>0</h2>
+                    <span>days</span>
+                </div>
+            </div>
+        </section>
+        <section class="content-grid">
+            <div class="panel weekly-panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="small-title">THIS WEEK</p>
+                        <h2>Weekly Performance</h2>
+                    </div>
+                    <div class="trend">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        +18%
+                    </div>
+                </div>
+                <div class="chart">
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:55%"></span>
+                        </div>
+                        <p>MON</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:75%"></span>
+                        </div>
+                        <p>TUE</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:45%"></span>
+                        </div>
+                        <p>WED</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:90%"></span>
+                        </div>
+                        <p>THU</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:70%"></span>
+                        </div>
+                        <p>FRI</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:40%"></span>
+                        </div>
+                        <p>SAT</p>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar">
+                            <span style="height:65%"></span>
+                        </div>
+                        <p>SUN</p>
+                    </div>
+                </div>
+            </div>
+            <!-- XP CARD -->
+            <div class="panel xp-panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="small-title">NEXT LEVEL</p>
+                        <h2>Level Progress</h2>
+                    </div>
+                    <i class="fa-solid fa-ranking-star panel-icon"></i>
+                </div>
+                <div class="level-number">
+                    <span>LEVEL</span>
+                    <strong>01</strong>
+                </div>
+                <div class="xp-info">
+                    <span>0 XP</span>
+                    <span>100 XP</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="xp-fill" style="width: 0%;"></div>
+                </div>
+                <p class="remaining">
+                    ⚡ 100 XP remaining to Level 02
+                </p>
+            </div>
+        </section>
+        <section class="achievement-progress">
+            <div class="achievement-icon">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+                <p>ACHIEVEMENT PROGRESS</p>
+                <h2>14 Day Warrior</h2>
+                <div class="achievement-bar">
+                    <div class="achievement-fill"></div>
+                </div>
+                <span>12 / 14 days completed</span>
+            </div>
+            <div class="achievement-percent">
+                86%
+            </div>
+        </section>
+        <section class="quote-card">
+            <i class="fa-solid fa-quote-left"></i>
+            <h2>
+                Progress is built one quest at a time.
+            </h2>
+            <p>
+                Keep going. Your future self is watching.
+            </p>
+        </section>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/progress.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/settings.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     <div class="background">
@@ -29,6 +30,10 @@
             <a href="quests.html">
                 <i class="fa-solid fa-scroll"></i>
                 <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
             </a>
             <a href="progress.html">
                 <i class="fa-solid fa-chart-line"></i>
@@ -146,14 +151,15 @@
                             <label>Username</label>
                             <input
                                 type="text"
-                                value="Veera"
+                                placeholder="Your username"
+                                value=""
                             >
                         </div>
                         <div class="input-group">
                             <label>Questify Rank</label>
                             <input
                                 type="text"
-                                value="Explorer"
+                                value="Novice Adventurer"
                                 disabled
                             >
                         </div>
@@ -161,14 +167,15 @@
                             <label>Email Address</label>
                             <input
                                 type="email"
-                                value="veera@example.com"
+                                placeholder="your.email@example.com"
+                                value=""
                             >
                         </div>
                         <div class="input-group">
                             <label>Current Level</label>
                             <input
                                 type="text"
-                                value="Level 05"
+                                value="Level 01"
                                 disabled
                             >
                         </div>
@@ -429,5 +436,9 @@
             </span>
         </footer>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/settings.js"></script>
 </body>
 </html>

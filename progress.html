@@ -7,6 +7,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/progress.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     <!-- Animated Background -->
@@ -30,6 +31,10 @@
             <a href="quests.html">
                 <i class="fa-solid fa-scroll"></i>
                 <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
             </a>
             <a href="progress.html" class="active">
                 <i class="fa-solid fa-chart-line"></i>
@@ -70,32 +75,31 @@
                 </div>
                 <div>
                     <p>CURRENT LEVEL</p>
-                    <h3>LEVEL 05</h3>
+                    <h3>LEVEL 01</h3>
                 </div>
             </div>
         </section>
         <section class="overall-card">
             <div class="overall-left">
                 <p class="card-label">OVERALL PROGRESS</p>
-                <h1>72<span>%</span></h1>
+                <h1>0<span>%</span></h1>
                 <p>
-                    You're doing great! Keep completing quests
-                    to reach the next milestone.
+                    Complete your daily quests to earn XP and level up your journey!
                 </p>
                 <div class="overall-progress">
                     <div class="progress-top">
                         <span>Journey Progress</span>
-                        <span>72%</span>
+                        <span>0%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill"></div>
+                        <div class="progress-fill" style="width: 0%;"></div>
                     </div>
                 </div>
             </div>
             <div class="overall-circle">
                 <div class="circle-inner">
                     <i class="fa-solid fa-fire"></i>
-                    <strong>12</strong>
+                    <strong>0</strong>
                     <span>DAY STREAK</span>
                 </div>
             </div>
@@ -107,8 +111,8 @@
                 </div>
                 <div>
                     <p>QUESTS COMPLETED</p>
-                    <h2>28</h2>
-                    <span>+6 this week</span>
+                    <h2>0</h2>
+                    <span>Start your first quest</span>
                 </div>
             </div>
             <div class="stat-card">
@@ -117,8 +121,8 @@
                 </div>
                 <div>
                     <p>TOTAL XP</p>
-                    <h2>2,450</h2>
-                    <span>+420 this week</span>
+                    <h2>0</h2>
+                    <span>Earn XP from quests</span>
                 </div>
             </div>
             <div class="stat-card">
@@ -127,7 +131,7 @@
                 </div>
                 <div>
                     <p>BEST STREAK</p>
-                    <h2>18</h2>
+                    <h2>0</h2>
                     <span>days</span>
                 </div>
             </div>
@@ -200,17 +204,17 @@
                 </div>
                 <div class="level-number">
                     <span>LEVEL</span>
-                    <strong>05</strong>
+                    <strong>01</strong>
                 </div>
                 <div class="xp-info">
-                    <span>850 XP</span>
-                    <span>1000 XP</span>
+                    <span>0 XP</span>
+                    <span>100 XP</span>
                 </div>
                 <div class="progress-bar">
-                    <div class="xp-fill"></div>
+                    <div class="xp-fill" style="width: 0%;"></div>
                 </div>
                 <p class="remaining">
-                    ⚡ 150 XP remaining to Level 06
+                    ⚡ 100 XP remaining to Level 02
                 </p>
             </div>
         </section>
@@ -240,5 +244,9 @@
             </p>
         </section>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/progress.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/achievements.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     <div class="background">
@@ -30,11 +31,15 @@
                 <i class="fa-solid fa-scroll"></i>
                 <span>Quests</span>
             </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
+            </a>
             <a href="progress.html">
                 <i class="fa-solid fa-chart-line"></i>
                 <span>Progress</span>
             </a>
-            <a href="achievements.html" class="active">
+            <a href="achievement.html" class="active">
                 <i class="fa-solid fa-trophy"></i>
                 <span>Achievements</span>
             </a>
@@ -70,24 +75,23 @@
                     ✨ NEXT ACHIEVEMENT
                 </p>
                 <h1>
-                    14 Day Warrior
+                    First Victory
                 </h1>
                 <p class="featured-description">
-                    Keep your streak alive and prove your consistency.
-                    Two more days stand between you and your next legendary reward.
+                    Complete your very first quest to begin your adventurer journey.
                 </p>
                 <!-- PROGRESS -->
                 <div class="achievement-progress">
                     <div class="progress-top">
-                        <span>12 / 14 DAYS</span>
-                        <span>86%</span>
+                        <span>0 / 1 QUESTS</span>
+                        <span>0%</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill"></div>
+                        <div class="progress-fill" style="width: 0%;"></div>
                     </div>
                 </div>
                 <p class="unlock-message">
-                    🔥 Only 2 more days to unlock!
+                    🔥 Complete 1 quest to unlock!
                 </p>
                 <!-- REWARD -->
                 <div class="reward-preview">
@@ -100,17 +104,17 @@
                         </div>
                         <div>
                             <h3>
-                                Warrior Badge
+                                First Victory Badge
                             </h3>
                             <p>
-                                Exclusive achievement badge
+                                Proof of your first accomplishment
                             </p>
                         </div>
                     </div>
                     <div class="reward-xp">
                         <span>⚡</span>
                         <strong>
-                            +250 XP
+                            +50 XP
                         </strong>
                     </div>
                 </div>
@@ -124,7 +128,7 @@
                     </div>
                 </div>
                 <span class="badge-status">
-                    86% COMPLETE
+                    0% COMPLETE
                 </span>
             </div>
         </section>
@@ -134,7 +138,7 @@
                 <h2>Achievement Hall</h2>
             </div>
             <span>
-                4 / 8 Unlocked
+                0 / 6 Unlocked
             </span>
         </div>
         <section class="achievement-grid">
@@ -262,5 +266,9 @@
             </span>
         </footer>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/achievements.js"></script>
 </body>
 </html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify | Settings</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/settings.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-khanda"></i>
+            </div>
+            <h1>QUESTIFY</h1>
+        </div>
+        <div class="nav-links">
+            <a href="home.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="quests.html">
+                <i class="fa-solid fa-scroll"></i>
+                <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
+            </a>
+            <a href="progress.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Progress</span>
+            </a>
+            <a href="achievement.html">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </div>
+            <a href="profile.html" class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    <main class="main-content">
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">
+                    QUESTIFY CONTROL CENTER
+                </p>
+                <h2>
+                    Settings
+                    <span>⚙️</span>
+                </h2>
+                <p class="sub-text">
+                    Customize your Questify experience your way.
+                </p>
+            </div>
+        </header>
+        <section class="settings-layout">
+            <aside class="settings-menu">
+                <p class="menu-title">
+                    SETTINGS
+                </p>
+                <a href="#account" class="menu-item active">
+                    <div class="menu-icon purple">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <strong>Account</strong>
+                        <span>Profile information</span>
+                    </div>
+                </a>
+                <a href="#appearance" class="menu-item">
+                    <div class="menu-icon blue">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div>
+                        <strong>Appearance</strong>
+                        <span>Theme & interface</span>
+                    </div>
+                </a>
+                <a href="#notifications" class="menu-item">
+                    <div class="menu-icon gold">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div>
+                        <strong>Notifications</strong>
+                        <span>Alerts & reminders</span>
+                    </div>
+                </a>
+                <a href="#privacy" class="menu-item">
+                    <div class="menu-icon green">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <strong>Privacy</strong>
+                        <span>Security preferences</span>
+                    </div>
+                </a>
+                <a href="#quest" class="menu-item">
+                    <div class="menu-icon pink">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <div>
+                        <strong>Quest Preferences</strong>
+                        <span>Customize your quests</span>
+                    </div>
+                </a>
+                <a href="#logout" class="menu-item logout-item">
+                    <div class="menu-icon red">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div>
+                        <strong>Logout</strong>
+                        <span>Leave Questify</span>
+                    </div>
+                </a>
+            </aside>
+            <div class="settings-content">
+                <section class="settings-card" id="account">
+                    <div class="card-heading">
+                        <div>
+                            <p class="eyebrow">
+                                ACCOUNT
+                            </p>
+                            <h2>Account Information</h2>
+                        </div>
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label>Username</label>
+                            <input
+                                type="text"
+                                placeholder="Your username"
+                                value=""
+                            >
+                        </div>
+                        <div class="input-group">
+                            <label>Questify Rank</label>
+                            <input
+                                type="text"
+                                value="Novice Adventurer"
+                                disabled
+                            >
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input
+                                type="email"
+                                placeholder="your.email@example.com"
+                                value=""
+                            >
+                        </div>
+                        <div class="input-group">
+                            <label>Current Level</label>
+                            <input
+                                type="text"
+                                value="Level 01"
+                                disabled
+                            >
+                        </div>
+                    </div>
+                    <button class="save-btn">
+                        <i class="fa-solid fa-check"></i>
+                        Save Changes
+                    </button>
+                </section>
+                <section class="settings-card" id="appearance">
+                    <div class="card-heading">
+                        <div>
+                            <p class="eyebrow">
+                                PERSONALIZATION
+                            </p>
+                            <h2>Appearance</h2>
+                        </div>
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-moon"></i>
+                            </div>
+                            <div>
+                                <h3>Dark Mode</h3>
+                                <p>
+                                    Keep the premium dark Questify interface.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h3>Animated Interface</h3>
+                                <p>
+                                    Enable visual animations throughout Questify.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="settings-card" id="notifications">
+                    <div class="card-heading">
+                        <div>
+                            <p class="eyebrow">
+                                STAY INFORMED
+                            </p>
+                            <h2>Notifications</h2>
+                        </div>
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <div>
+                                <h3>Streak Reminders</h3>
+                                <p>
+                                    Get reminded before losing your streak.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-scroll"></i>
+                            </div>
+                            <div>
+                                <h3>Quest Reminders</h3>
+                                <p>
+                                    Receive reminders for unfinished quests.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h3>Achievement Alerts</h3>
+                                <p>
+                                    Celebrate your newly unlocked achievements.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="settings-card" id="privacy">
+                    <div class="card-heading">
+                        <div>
+                            <p class="eyebrow">
+                                PROTECTION
+                            </p>
+                            <h2>Privacy & Security</h2>
+                        </div>
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <div class="security-box">
+                        <div class="security-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div>
+                            <h3>Your account is protected</h3>
+                            <p>
+                                Your Questify progress and personal
+                                information are kept secure.
+                            </p>
+                        </div>
+                        <span class="secure-badge">
+                            SECURE
+                        </span>
+                    </div>
+                    <a href="#" class="security-link">
+                        <span>
+                            <i class="fa-solid fa-key"></i>
+                            Change Password
+                        </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="security-link">
+                        <span>
+                            <i class="fa-solid fa-download"></i>
+                            Download My Data
+                        </span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </section>
+                <section class="settings-card" id="quest">
+                    <div class="card-heading">
+                        <div>
+                            <p class="eyebrow">
+                                YOUR ADVENTURE
+                            </p>
+                            <h2>Quest Preferences</h2>
+                        </div>
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <h3>Daily Quest Suggestions</h3>
+                                <p>
+                                    Show personalized quests on your dashboard.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="option-row">
+                        <div class="option-info">
+                            <div class="option-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h3>XP Celebration</h3>
+                                <p>
+                                    Highlight XP rewards after completing quests.
+                                </p>
+                            </div>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                checked
+                            >
+                            <span></span>
+                        </label>
+                    </div>
+                </section>
+                <section class="danger-card" id="logout">
+                    <div>
+                        <p class="danger-label">
+                            ACCOUNT ACTION
+                        </p>
+                        <h2>Ready to leave the adventure?</h2>
+                        <p>
+                            You can safely log out of your Questify account.
+                        </p>
+                    </div>
+                    <a href="login.html" class="logout-btn">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-logo">
+                ⚡ QUESTIFY
+            </div>
+            <p>
+                Build your journey. Complete your quests.
+                Become legendary.
+            </p>
+            <span>
+                © 2026 Questify
+            </span>
+        </footer>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/settings.js"></script>
+</body>
+</html>

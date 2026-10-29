@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/profile.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     <!-- Animated Background -->
@@ -31,6 +32,10 @@
             <a href="quests.html">
                 <i class="fa-solid fa-scroll"></i>
                 <span>Quests</span>
+            </a>
+            <a href="create.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span>Create</span>
             </a>
             <a href="progress.html">
                 <i class="fa-solid fa-chart-line"></i>
@@ -63,7 +68,7 @@
                 <p class="eyebrow">YOUR IDENTITY</p>
                 <h2>
                     Welcome back,
-                    <span>Veera 👋</span>
+                    <span>Adventurer 👋</span>
                 </h2>
                 <p class="sub-text">
                     Your journey, your achievements, your legacy.
@@ -79,11 +84,11 @@
                     <div class="online-dot"></div>
                 </div>
                 <div class="user-details">
-                    <p class="user-label">QUESTIFY EXPLORER</p>
-                    <h1>Veera</h1>
+                    <p class="user-label">QUESTIFY ADVENTURER</p>
+                    <h1>Adventurer</h1>
                     <p class="rank">
                         <i class="fa-solid fa-crown"></i>
-                        Explorer
+                        Novice Adventurer
                     </p>
                     <p class="joined">
                         <i class="fa-regular fa-calendar"></i>
@@ -102,9 +107,9 @@
             <div class="level-heading">
                 <div>
                     <p class="card-label">CURRENT LEVEL</p>
-                    <h2>LEVEL 05</h2>
+                    <h2>LEVEL 01</h2>
                     <p>
-                        Explorer
+                        Novice Adventurer
                     </p>
                 </div>
                 <div class="level-badge">
@@ -112,17 +117,17 @@
                 </div>
             </div>
             <div class="xp-details">
-                <span>850 XP</span>
-                <span>1000 XP</span>
+                <span>0 XP</span>
+                <span>100 XP</span>
             </div>
             <div class="xp-bar">
-                <div class="xp-fill"></div>
+                <div class="xp-fill" style="width: 0%;"></div>
             </div>
             <div class="level-bottom">
                 <p>
-                    🔥 Only <strong>150 XP</strong> left to reach Level 06!
+                    🔥 Only <strong>100 XP</strong> left to reach Level 02!
                 </p>
-                <span>85%</span>
+                <span>0%</span>
             </div>
         </section>
 
@@ -133,7 +138,7 @@
                 </div>
                 <div>
                     <p>Current Streak</p>
-                    <h2>12 Days</h2>
+                    <h2>0 Days</h2>
                 </div>
             </div>
             <div class="stat-card">
@@ -142,7 +147,7 @@
                 </div>
                 <div>
                     <p>Total XP</p>
-                    <h2>2,450 XP</h2>
+                    <h2>0 XP</h2>
                 </div>
             </div>
             <div class="stat-card">
@@ -151,7 +156,7 @@
                 </div>
                 <div>
                     <p>Quests Completed</p>
-                    <h2>28</h2>
+                    <h2>0</h2>
                 </div>
             </div>
             <div class="stat-card">
@@ -160,7 +165,7 @@
                 </div>
                 <div>
                     <p>Achievements</p>
-                    <h2>12 / 14</h2>
+                    <h2>0 / 6</h2>
                 </div>
             </div>
         </section>
@@ -179,28 +184,28 @@
                     <div class="performance-item">
                         <div class="performance-top">
                             <span>Quest Completion</span>
-                            <strong>82%</strong>
+                            <strong>0%</strong>
                         </div>
                         <div class="small-bar">
-                            <div class="completion"></div>
+                            <div class="completion" style="width: 0%;"></div>
                         </div>
                     </div>
                     <div class="performance-item">
                         <div class="performance-top">
                             <span>Daily Goals</span>
-                            <strong>76%</strong>
+                            <strong>0%</strong>
                         </div>
                         <div class="small-bar">
-                            <div class="goals"></div>
+                            <div class="goals" style="width: 0%;"></div>
                         </div>
                     </div>
                     <div class="performance-item">
                         <div class="performance-top">
                             <span>Consistency</span>
-                            <strong>91%</strong>
+                            <strong>0%</strong>
                         </div>
                         <div class="small-bar">
-                            <div class="consistency"></div>
+                            <div class="consistency" style="width: 0%;"></div>
                         </div>
                     </div>
                 </div>
@@ -211,7 +216,7 @@
                     🔥
                 </div>
                 <p class="card-label">BEST STREAK</p>
-                <h2>18 Days</h2>
+                <h2>0 Days</h2>
                 <p>
                     Your longest productivity streak.
                 </p>
@@ -234,31 +239,13 @@
                 </a>
             </div>
             <div class="achievement-grid">
-                <div class="achievement-mini">
+                <div class="achievement-mini" style="opacity: 0.6;">
                     <div class="mini-icon">
-                        🏆
+                        🔒
                     </div>
                     <div>
-                        <h3>7 Day Warrior</h3>
-                        <p>7 day streak completed</p>
-                    </div>
-                </div>
-                <div class="achievement-mini">
-                    <div class="mini-icon">
-                        ⚡
-                    </div>
-                    <div>
-                        <h3>XP Hunter</h3>
-                        <p>Earned 2000+ XP</p>
-                    </div>
-                </div>
-                <div class="achievement-mini">
-                    <div class="mini-icon">
-                        🎯
-                    </div>
-                    <div>
-                        <h3>Focus Master</h3>
-                        <p>Completed 10 focus quests</p>
+                        <h3>Unlock Badges</h3>
+                        <p>Complete quests to forge your legacy</p>
                     </div>
                 </div>
             </div>
@@ -292,5 +279,9 @@
             </span>
         </footer>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 </html>

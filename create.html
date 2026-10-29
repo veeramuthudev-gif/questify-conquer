@@ -7,6 +7,7 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./CSS/create.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
 </head>
 <body>
     
@@ -40,7 +41,7 @@
                 <i class="fa-solid fa-chart-line"></i>
                 <span>Progress</span>
             </a>
-            <a href="achievements.html">
+            <a href="achievement.html">
                 <i class="fa-solid fa-trophy"></i>
                 <span>Achievements</span>
             </a>
@@ -99,6 +100,7 @@
                             <input
                                 type="text"
                                 placeholder="Enter your quest title"
+                                required
                             >
                         </div>
                     </div>
@@ -139,7 +141,7 @@
                                 <i class="fa-solid fa-fire"></i>
                                 <select>
                                     <option>Easy</option>
-                                    <option>Medium</option>
+                                    <option selected>Medium</option>
                                     <option>Hard</option>
                                 </select>
                             </div>
@@ -153,7 +155,7 @@
                             </label>
                             <div class="input-box">
                                 <i class="fa-solid fa-bolt"></i>
-                                <input type="number" placeholder="100">
+                                <input type="number" placeholder="e.g. 50, 100">
                                 <span class="input-unit">
                                     XP
                                 </span>
@@ -167,7 +169,7 @@
                                 <i class="fa-regular fa-clock"></i>
                                 <input
                                     type="text"
-                                    placeholder="30 mins"
+                                    placeholder="e.g. 30 mins, 1 hour"
                                 >
                             </div>
                         </div>
@@ -302,5 +304,9 @@
             </span>
         </footer>
     </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/create.js"></script>
 </body>
 </html>

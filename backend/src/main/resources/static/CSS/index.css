@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+   background: linear-gradient( 135deg,#0f172ab0, #1e1b4b9c, #0f172ac6 ),url(../IMAGES/Achieve.png) ;
+    /* background-image:url(../IMAGES/Achieve.png) ; */
+    background-size: 120%;
+    background-position:center;
+    background-repeat: no-repeat;
+    animation: moveBackground 5s ease-in-out infinite alternate;
+}
+@keyframes moveBackground{
+    0%{
+        background-position: 40% 50%;
+    }
+    100%{
+        background-position:50% 40%;
+    }
+}
+.container{
+    text-align: center;
+    margin: 100px;
+    color:#FFFFFF;
+}
+.logo{
+   font-size: 100px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #7c3aed,0 0 50px #3b82f6;
+    animation: logoFloat 3s infinite ease-in-out;
+}
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #ffffff, #c084fc, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+h2{
+    font-size: 75px;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #ffffff, #c084fc, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+h2+p{
+    margin-top: 15px;
+    letter-spacing: 4px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+button{
+    margin-top:30px;
+    padding:20px 50px;
+    border-radius:10px;
+    background: linear-gradient(to right, rgb(129, 34, 50), #3d1454);
+    border:none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: aliceblue;
+}
+button:hover{
+    /* background: linear-gradient(to right, rgb(129, 34, 50), #3d1454); */
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* color:purple; */
+    transform: scale(1.03);
+}
+a+p{
+    margin-top: 20px;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+p a{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#c084fc;
+    /* text-shadow: 0px 5px 10px rgba(236, 0, 161, 0.786); */
+}
+p a:hover{
+    /* border-bottom: 2px solid rgba(236, 0, 161, 0.786); */
+    color: rgb(237, 226, 226);
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 80px 40px;
+    }
+    .logo {
+        font-size: 80px;
+    }
+    h1 {
+        font-size: 75px;
+    }
+    h2 {
+        font-size: 55px;
+    }
+    h2 + p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    button {
+        padding: 18px 40px;
+    }
+    body {
+        background-size: 140%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        margin: 60px 20px;
+    }
+    .logo {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    h2 {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+    h2 + p {
+        margin-top: 12px;
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.6;
+    }
+    button {
+        margin-top: 25px;
+        padding: 16px 35px;
+        font-size: 14px;
+    }
+    a + p {
+        margin-top: 18px;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+    p a {
+        margin-left: 8px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin: 45px 15px;
+    }
+    .logo {
+        font-size: 48px;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    h2 + p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+    button {
+        padding: 14px 28px;
+        font-size: 13px;
+    }
+    a + p {
+        font-size: 14px;
+    }
+    p a {
+        font-size: 18px;
+    }
+}

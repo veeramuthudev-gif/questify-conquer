@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questify | Quest Details</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/quests.css">
+    <link rel="stylesheet" href="./CSS/toast.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <header class="navbar">
+        <a href="home.html" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-khanda"></i>
+            </div>
+            <h1>QUESTIFY</h1>
+        </a>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="quests.html" class="active">Quests</a>
+            <a href="create.html">Create</a>
+            <a href="progress.html">Progress</a>
+            <a href="achievement.html">Achievements</a>
+        </nav>
+        <div class="nav-right">
+            <div class="notification">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </div>
+            <a href="profile.html" class="profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <aside class="quest-sidebar">
+        <p class="sidebar-title">QUEST MENU</p>
+        <a href="quests.html" class="side-link active">
+            <i class="fa-solid fa-compass"></i>
+            <span>Quest Overview</span>
+        </a>
+        <a href="#objectives" class="side-link">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Objectives</span>
+        </a>
+        <a href="#rewards" class="side-link">
+            <i class="fa-solid fa-gift"></i>
+            <span>Rewards</span>
+        </a>
+        <a href="#details" class="side-link">
+            <i class="fa-solid fa-scroll"></i>
+            <span>Quest Details</span>
+        </a>
+        <a href="#progress" class="side-link">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Quest Progress</span>
+        </a>
+        <div class="sidebar-level">
+            <div class="level-circle">
+                01
+            </div>
+            <div>
+                <p>Current Level</p>
+                <h3>Novice Adventurer</h3>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <a href="home.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Dashboard
+        </a>
+
+        <section class="quest-hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <p class="chapter">
+                    CHAPTER — 01
+                </p>
+                <h1>
+                    Secrets of
+                    <span>Silvergate</span>
+                </h1>
+                <p class="hero-description">
+                    A mysterious quest awaits beyond the gates.
+                    Complete the objectives, earn XP and prove
+                    yourself as a true adventurer.
+                </p>
+                <div class="tags">
+                    <span>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Main Quest
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-book"></i>
+                        Story
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-map"></i>
+                        Kingdom A
+                    </span>
+                </div>
+            </div>
+            <div class="character">
+                <div class="character-aura"></div>
+                <div class="character-card">
+                     <img src="./IMAGES/gamer.jfif" alt="gamer">
+                </div>
+                <div class="character-ring"></div>
+            </div>
+        </section>
+
+        <section class="quest-info">
+            <div class="info-card objectives" id="objectives">
+                <div class="card-heading">
+                    <div class="heading-icon purple">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <p>YOUR MISSION</p>
+                        <h2>Objectives</h2>
+                    </div>
+                </div>
+                <div class="objective">
+                    <div class="objective-icon">
+                        <i class="fa-solid fa-skull"></i>
+                    </div>
+                    <div class="objective-content">
+                        <div class="objective-title">
+                            <h3>Defeat Goblins</h3>
+                            <span>13 / 35</span>
+                        </div>
+                        <div class="objective-bar">
+                            <div class="objective-fill one"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="objective">
+                    <div class="objective-icon blue">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <div class="objective-content">
+                        <div class="objective-title">
+                            <h3>Collect Goblin Fangs</h3>
+                            <span>15 / 15</span>
+                        </div>
+                        <div class="objective-bar">
+                            <div class="objective-fill two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card rewards" id="rewards">
+                <div class="card-heading">
+                    <div class="heading-icon gold">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div>
+                        <p>VICTORY LOOT</p>
+                        <h2>Rewards</h2>
+                    </div>
+                </div>
+                <div class="reward-grid">
+                    <div class="reward">
+                        <div class="reward-icon coin">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <div>
+                            <h3>500</h3>
+                            <p>Gold Coins</p>
+                        </div>
+                    </div>
+                    <div class="reward">
+                        <div class="reward-icon scroll">
+                            <i class="fa-solid fa-scroll"></i>
+                        </div>
+                        <div>
+                            <h3>x1</h3>
+                            <p>Quest Scroll</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card details" id="details">
+                <div class="card-heading">
+                    <div class="heading-icon blue">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <div>
+                        <p>QUEST INFORMATION</p>
+                        <h2>Details</h2>
+                    </div>
+                </div>
+                <div class="details-grid">
+                    <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Duration</span>
+                        <strong>60 Min</strong>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Difficulty</span>
+                        <strong>Hard</strong>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <span>Experience</span>
+                        <strong>+300 XP</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-section" id="progress">
+            <div>
+                <p>QUEST PROGRESS</p>
+                <h2>
+                    Your adventure is
+                    <span>already underway.</span>
+                </h2>
+                <p class="progress-text">
+                    Keep going, adventurer. Every objective
+                    completed brings you closer to victory.
+                </p>
+            </div>
+            <div class="progress-number">
+                <strong>0%</strong>
+                <span>Completed</span>
+            </div>
+        </section>
+
+        <div class="start-area">
+            <a href="#" class="start-btn">
+                <span>Advance Quest</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <section class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+                “Every great adventure begins with a single step.”
+            </p>
+            <span>— Questify</span>
+        </section>
+    </main>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/toast.js"></script>
+    <script src="./js/quests.js"></script>
+</body>
+</html>
