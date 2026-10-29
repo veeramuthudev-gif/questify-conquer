@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⚔️ QUESTIFY — Java Full Stack RPG Gamified Productivity Platform
 
 **Questify** turns your daily tasks, habits, and goals into an immersive RPG adventure. Level up, earn XP, maintain streaks, and claim legendary achievements!
@@ -130,3 +131,7 @@ All pages are fully interactive, validate inputs, create quests, and store progr
 | `POST` | `/api/achievements/{id}/claim` | Claim an unlocked achievement |
 | `GET` | `/api/settings` | Get user settings and preferences |
 | `PUT` | `/api/settings` | Save user settings |
+=======
+# questify-conquer
+Questify Conquer - A task management application designed to improve productivity and track achievements
+>>>>>>> f2647e122d2eb996c8cf320f2d250baf99e42ed1
